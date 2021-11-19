@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
-sensors | grep 'Core'
+
+SENSOR_RESULT=$(sensors)
+echo "${SENSOR_RESULT}" | grep 'Tdie'
+echo "${SENSOR_RESULT}" | grep 'Tctl'
+
